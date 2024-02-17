@@ -28,3 +28,12 @@ newDiv.appendChild(childPara);
 container.appendChild(para);
 container.appendChild(heading);
 container.appendChild(newDiv);
+
+const clickMe = document.querySelector(".click-me");
+clickMe.onclick = () => alert("Hello again.");
+
+const eventButton = document.querySelector(".event");
+eventButton.addEventListener('click', () => alert("goodbye."));
+eventButton.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
