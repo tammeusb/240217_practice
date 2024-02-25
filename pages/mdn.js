@@ -42,4 +42,10 @@ darkStyle.addEventListener("click", () => {
     para.style.textAlign = "center";
 });
 
+const img = document.querySelector('img');
+img.onload = (event) => {
+    console.log("image loaded.");
+}
+
+
 

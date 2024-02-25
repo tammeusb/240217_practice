@@ -37,3 +37,12 @@ eventButton.addEventListener('click', () => alert("goodbye."));
 eventButton.addEventListener('click', function (e) {
     e.target.style.background = 'blue';
 });
+
+window.addEventListener('load', (event) => {
+    console.log("Fully loaded.");
+});
+
+window.addEventListener('beforeunload', (event) => {
+    event.preventDefault();
+    event.returnValue = '';
+});
